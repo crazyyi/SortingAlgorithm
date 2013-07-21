@@ -16,6 +16,9 @@
 		A3465702179A73E7009F2FDC /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = A3465701179A73E7009F2FDC /* Default.png */; };
 		A3465704179A73E7009F2FDC /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A3465703179A73E7009F2FDC /* Default@2x.png */; };
 		A3465706179A73E8009F2FDC /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A3465705179A73E7009F2FDC /* Default-568h@2x.png */; };
+		A346570E179A7432009F2FDC /* SAMergeSortController.m in Sources */ = {isa = PBXBuildFile; fileRef = A346570D179A7432009F2FDC /* SAMergeSortController.m */; };
+		A3465711179A7440009F2FDC /* SAViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A3465710179A7440009F2FDC /* SAViewController.m */; };
+		A3465715179B3156009F2FDC /* SABarView.m in Sources */ = {isa = PBXBuildFile; fileRef = A3465714179B3155009F2FDC /* SABarView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +35,13 @@
 		A3465701179A73E7009F2FDC /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
 		A3465703179A73E7009F2FDC /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
 		A3465705179A73E7009F2FDC /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		A346570C179A7432009F2FDC /* SAMergeSortController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SAMergeSortController.h; sourceTree = "<group>"; };
+		A346570D179A7432009F2FDC /* SAMergeSortController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SAMergeSortController.m; sourceTree = "<group>"; };
+		A346570F179A743F009F2FDC /* SAViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SAViewController.h; sourceTree = "<group>"; };
+		A3465710179A7440009F2FDC /* SAViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SAViewController.m; sourceTree = "<group>"; };
+		A3465712179B26EB009F2FDC /* Logging.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Logging.h; sourceTree = "<group>"; };
+		A3465713179B3155009F2FDC /* SABarView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SABarView.h; sourceTree = "<group>"; };
+		A3465714179B3155009F2FDC /* SABarView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SABarView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,8 +88,15 @@
 		A34656F5179A73E7009F2FDC /* SortingAlgorithms */ = {
 			isa = PBXGroup;
 			children = (
+				A3465712179B26EB009F2FDC /* Logging.h */,
 				A34656FE179A73E7009F2FDC /* SAAppDelegate.h */,
 				A34656FF179A73E7009F2FDC /* SAAppDelegate.m */,
+				A346570F179A743F009F2FDC /* SAViewController.h */,
+				A3465710179A7440009F2FDC /* SAViewController.m */,
+				A346570C179A7432009F2FDC /* SAMergeSortController.h */,
+				A346570D179A7432009F2FDC /* SAMergeSortController.m */,
+				A3465713179B3155009F2FDC /* SABarView.h */,
+				A3465714179B3155009F2FDC /* SABarView.m */,
 				A34656F6179A73E7009F2FDC /* Supporting Files */,
 			);
 			path = SortingAlgorithms;
@@ -167,6 +184,9 @@
 			files = (
 				A34656FC179A73E7009F2FDC /* main.m in Sources */,
 				A3465700179A73E7009F2FDC /* SAAppDelegate.m in Sources */,
+				A346570E179A7432009F2FDC /* SAMergeSortController.m in Sources */,
+				A3465711179A7440009F2FDC /* SAViewController.m in Sources */,
+				A3465715179B3156009F2FDC /* SABarView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

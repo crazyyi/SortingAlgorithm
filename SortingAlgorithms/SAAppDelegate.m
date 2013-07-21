@@ -7,6 +7,7 @@
 //
 
 #import "SAAppDelegate.h"
+#import "SAViewController.h"
 
 @implementation SAAppDelegate
 
@@ -14,6 +15,8 @@
 {
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     // Override point for customization after application launch.
+    SAViewController *saViewController = [[SAViewController alloc] init];
+    [self.window setRootViewController:saViewController];
     self.window.backgroundColor = [UIColor whiteColor];
     [self.window makeKeyAndVisible];
     return YES;
