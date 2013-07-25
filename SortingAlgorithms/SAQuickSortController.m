@@ -1,20 +1,18 @@
 //
-//  SAMergeSortController.m
+//  SAQuickSortController.m
 //  SortingAlgorithms
 //
-//  Created by Yi Zeng on 20/07/13.
+//  Created by Yi Zeng on 24/07/13.
 //  Copyright (c) 2013 AFun. All rights reserved.
 //
 
-#import "SAMergeSortController.h"
-#import "Logging.h"
-#import "SABarView.h"
+#import "SAQuickSortController.h"
 
-@interface SAMergeSortController ()
+@interface SAQuickSortController ()
 
 @end
 
-@implementation SAMergeSortController
+@implementation SAQuickSortController
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -28,12 +26,13 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+	// Do any additional setup after loading the view.
 }
 
 - (void)startSorting
 {
     [barView animateSort:self];
-//    [barView switchLines];
+    //    [barView switchLines];
 }
 
 - (void)didReceiveMemoryWarning

@@ -8,6 +8,7 @@
 
 #import "SAViewController.h"
 #import "SAMergeSortController.h"
+#import "SAQuickSortController.h"
 
 @interface SAViewController ()
 
@@ -42,6 +43,7 @@
     [_quickSortBtn setTitle:@"Quick Sort" forState:UIControlStateNormal];
     _quickSortBtn.titleLabel.textColor = [UIColor blackColor];
     [_quickSortBtn setTranslatesAutoresizingMaskIntoConstraints:NO];
+    [_quickSortBtn addTarget:self action:@selector(quickSort) forControlEvents:UIControlEventTouchUpInside];
     [views setObject:_quickSortBtn forKey:@"quickSortBtn"];
     [self.view addSubview:_quickSortBtn];
     
@@ -60,6 +62,13 @@
     [self presentViewController:msController animated:YES completion:nil];
 }
 
+- (void)quickSort
+{
+    SAQuickSortController *qsController = [[SAQuickSortController alloc] init];
+    qsController.modalTransitionStyle = UIModalTransitionStyleFlipHorizontal;
+    
+    [self presentViewController:qsController animated:YES completion:nil];
+}
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];

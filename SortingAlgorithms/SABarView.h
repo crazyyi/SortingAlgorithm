@@ -14,4 +14,9 @@
 }
 
 @property (nonatomic, strong) NSArray *valueArray;
+@property (nonatomic, strong) CALayer *subLayer;
+@property (nonatomic, strong) NSMutableArray *barArray;
+
+- (void)animateSort:(id)sender;
+//- (void)switchLines;
 @end
